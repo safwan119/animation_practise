@@ -5,6 +5,7 @@ import 'package:animation_practise/views/animation/size_transition_practise.dart
 import 'package:animation_practise/views/animation/staggered_menu_animation.dart';
 import 'package:animation_practise/views/demo/staggered_demo.dart';
 import 'package:animation_practise/views/drag/physics_dragging_view.dart';
+import 'package:animation_practise/views/dropdown/dropdown_practise_view.dart';
 import 'package:animation_practise/views/paint/custom_paint_practise.dart';
 import 'package:animation_practise/views/routes/page_1_route.dart';
 import 'package:flutter/material.dart';
@@ -21,6 +22,7 @@ class AppRoutes {
   static const String staggeredDemoView = '/staggered_demo_view';
   static const String menuItemView = '/menu_item_view';
   static const String painterView = '/custom_paint_view';
+  static const String dropdownPractiseView = '/dropdown_practise_view';
 
   static Route<dynamic> onGenerateRoutes(RouteSettings setting) {
     switch (setting.name) {
@@ -47,6 +49,8 @@ class AppRoutes {
         return MaterialPageRoute(builder: (context) => StaggeredDemo());
       case containerAnimationView:
         return MaterialPageRoute(builder: (context) => ContainerAnimation());
+      case dropdownPractiseView:
+        return MaterialPageRoute(builder: (context) => DropdownPractiseView());
       case menuItemView:
         return MaterialPageRoute(
           builder: (context) => StaggeredMenuAnimation(),
