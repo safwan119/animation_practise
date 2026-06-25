@@ -24,10 +24,10 @@ class _CustomPaintPractiseState extends State<CustomPaintPractise>
         setState(() {});
       });
     _animationController.forward();
-    // _slideScale = CurvedAnimation(
-    //   parent: _animationController,
-    //   curve: const Interval(0.0, 0.45, curve: Curves.easeOut),
-    // );
+
+
+
+
   }
 
   @override
