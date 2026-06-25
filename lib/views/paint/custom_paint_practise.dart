@@ -24,10 +24,6 @@ class _CustomPaintPractiseState extends State<CustomPaintPractise>
         setState(() {});
       });
     _animationController.forward();
-
-
-
-
   }
 
   @override
@@ -263,4 +259,3 @@ class MyDrawingOval extends CustomPainter {
     return true;
   }
 }
-
